@@ -6,6 +6,7 @@ void main(){
   print('Digite um número de 1 a 12 para selecionar um mês do ano: ');
   int entrada = int.parse(stdin.readLineSync()!);
   print('O mês escolhido foi ${meses[entrada]}');
+  
 }
 
 /* void main(){
