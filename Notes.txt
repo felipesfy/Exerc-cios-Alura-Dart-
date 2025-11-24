@@ -1,0 +1,45 @@
+###################################
+###########COMANDOS DART###########
+###################################
+
+CRIAR PROJETO DART:
+dart create <nome do projeto>
+
+
+
+import 'dart:io'; - IO DE IN AND OUT, PARA CAPTURAR ENTRADA E SAIDA
+stdin.readLineSync() - PARA CAPTURAR ENTRADA DO USUÁRIO ('standard input.')
+
+Exemplo utiilzado:
+
+void main() {
+ print("Hello World!");
+ var entrada = stdin.readLineSync();
+ print ("A mensagem é: $entrada");
+}
+
+
+TIPOS DE VARIAVEIS:
+int = número inteiro (sem casas decimais) ex: 5
+double = permite números com casas decimais ex: 5,23
+bool = de boolean = True ou False
+null = Nulo
+String = "Linha de texto"
+List = Lista | Ex: List<String> nomes = ["Ana", "João", "Maria"]; | print("Primeiro nome da lista: ${nomes[0]}");
+rune = um único caractere, como 'a', 'B' ou '3'
+Map = Associam chaves únicas a valores, como uma agenda telefônica com nomes e números de telefone | Ex: Map<String, String> agenda = {"Ana": "1234-5678", "João": "9876-5432"}; | print("Telefone da Ana: ${agenda['Ana']}");
+Set = Coleções de valores não ordenados e sem valores repetidos, como um conjunto de cartas de baralho sem repetições | Ex: Set<int> numerosUnicos = {1, 2, 3, 4, 3}; // O número 3 só aparece uma vez | print("Números únicos no conjunto: $numerosUnicos");
+
+
+SWITCH CASE - Alternativa para o If Else, mais legivel:
+switch(operacao){
+  case 1 : soma();
+
+  case 2 : subtracao();
+
+  case 3 : multiplicacao();
+
+  case 4 : divisao();
+  
+  Break;
+}
