@@ -2,12 +2,30 @@ import 'dart:io';
 
 
 void main(){
-  Map <int, String> meses = {1 : 'Janeiro', 2 : 'Fevereiro', 3 : 'Março', 4 : 'Abril', 5 : 'Maio', 6 : 'Junho', 7 : 'Julho', 8 : 'Agosto', 9 : 'Setembro', 10 : 'Outubro', 11 : 'Novembro', 12 : 'Dezembro'};
-  print('Digite um número de 1 a 12 para selecionar um mês do ano: ');
-  int entrada = int.parse(stdin.readLineSync()!);
-  print('O mês escolhido foi ${meses[entrada]}');
-  
+  List <String> operacoes = <String> ['deposito', 'retirada', 'transferencia', 'pagamento'];
+  String? entrada = '';
+  double? valor = 0;
+
+  void getEntrada (){
+    print('Digite uma operação $operacoes:');
+    entrada = stdin.readLineSync();
+    if (entrada != null && operacoes.contains(entrada)){
+      print('Digite o valor da operação');
+      valor = double.parse(stdin.readLineSync()!);
+      print('Operação selecionada $entrada, valor da operação $valor');
+    } else {
+        print('Digite uma operação válida!');
+        getEntrada();
+    }
+  }
+  getEntrada();
 }
+/* void main(){
+    Map <int, String> meses = {1 : 'Janeiro', 2 : 'Fevereiro', 3 : 'Março', 4 : 'Abril', 5 : 'Maio', 6 : 'Junho', 7 : 'Julho', 8 : 'Agosto', 9 : 'Setembro', 10 : 'Outubro', 11 : 'Novembro', 12 : 'Dezembro'};
+    print('Digite um número de 1 a 12 para selecionar um mês do ano: ');
+    int entrada = int.parse(stdin.readLineSync()!);
+    print('O mês escolhido foi ${meses[entrada]}');
+  } */
 
 /* void main(){
     List <String> meses = <String>['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
