@@ -1,6 +1,43 @@
 //import 'dart:io';
 
+/* void main(){
+    ItemEstoque item1 = ItemEstoque('SmartPhone', 100);
+    ItemEstoque item2 = ItemEstoque('Notebook', 50);
 
+    List<ItemEstoque> itens = <ItemEstoque>[item1, item2];
+
+    for(ItemEstoque item in itens){
+      print('Produto: ${item.produto}, quantidade em estoque: ${item.quantidade}');
+    }
+  }
+
+  class ItemEstoque {
+    String produto;
+    int quantidade;
+
+    ItemEstoque(this.produto, this.quantidade);
+  } */
+
+/* void main(){
+    Receita macarraoAoPesto = Receita('Macarrão ao pesto', 20);
+    Receita lasanha4Queijos = Receita('Lasanha 4 queijos', 32);
+    Receita burrataComPesto = Receita('Burrata com pesto', 28);
+
+
+    List<Receita> receitas = <Receita>[macarraoAoPesto, lasanha4Queijos, burrataComPesto];
+
+    for (Receita receita in receitas){
+      print(receita.nome);
+      print(receita.preco);
+    }
+  }
+
+  class Receita {
+    String nome;
+    double preco;
+
+    Receita(this.nome, this.preco);
+  } */
 
 
 /* void main(){
