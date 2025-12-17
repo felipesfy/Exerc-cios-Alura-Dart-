@@ -1,4 +1,18 @@
 //import 'dart:io';
+import 'package:codigo_teste/cliente.dart';
+
+void main(){
+  Cliente clienteFelipe = Cliente('Felipe', [2]);
+
+  clienteFelipe.exibeReserva();
+  clienteFelipe.cancelaReserva(2);
+
+
+}
+
+
+
+
 
 /* void main(){
     ItemEstoque item1 = ItemEstoque('SmartPhone', 100);
