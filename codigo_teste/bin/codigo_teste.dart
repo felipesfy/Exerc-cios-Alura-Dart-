@@ -1,14 +1,75 @@
 //import 'dart:io';
-import 'package:codigo_teste/cliente.dart';
-
-void main(){
-  Cliente clienteFelipe = Cliente('Felipe', [2]);
-
-  clienteFelipe.exibeReserva();
-  clienteFelipe.cancelaReserva(2);
 
 
-}
+
+
+/* import 'package:codigo_teste/animal.dart';
+
+
+  void main(){
+    Animal mioshi = Animal('Japones', 'Mioshi');
+    print(mioshi.especie);
+    mioshi.emitirSom();
+
+
+    Cachorro cachorroMioshi = Cachorro('Coreano', 'Mioshinho');
+    cachorroMioshi.emitirSom();
+
+    Cachorro cachorroJorge = Cachorro('Guarulhos', 'Jorge');
+
+    cachorroJorge.abanarRabo();
+
+    cachorroMioshi.abanarRabo();
+  } */
+
+
+/* class Funcionario {
+    String nome;
+    double salario;
+
+    Funcionario(this.nome, this.salario);
+
+    void trabalhar() {
+      print("$nome trabalhou");
+    }
+  }
+
+  class Cozinheiro extends Funcionario {
+    Cozinheiro(super.nome, super.salario);
+
+    @override
+    void trabalhar() {
+      print("$nome trabalhou na cozinha");
+    }
+  }
+
+  class Garcom extends Funcionario {
+    Garcom(super.nome, super.salario);
+
+    @override
+    void trabalhar() {
+      print("$nome trabalhou no atendimento");
+    }
+  }
+
+  class Gerente extends Funcionario {
+    Gerente(super.nome, super.salario);
+
+
+    @override
+    void trabalhar() {
+      print("$nome gerenciou a equipe");
+    }
+  } */
+
+/* import 'package:codigo_teste/cliente.dart';
+
+  void main(){
+    Cliente clienteFelipe = Cliente('Felipe', [2]);
+
+    clienteFelipe.exibeReserva();
+    clienteFelipe.cancelaReserva(2);
+  } */
 
 
 
